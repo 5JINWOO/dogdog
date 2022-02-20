@@ -1,0 +1,170 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: plum;
+}
+
+/* navCSS */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 215);
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: plum;
+}
+
+i {
+    color: plum;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li:hover {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: plum;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: plum;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        padding: 8px 12px;
+    }
+
+    .navbar_toogleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }  
+    
+}
+
+ /* 로그인 페이지 section */
+.section_logo{ 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;    
+    height:200px;    
+    font-size: 5em;   
+}
+.section_logo a {
+    padding:8px 12px;
+}
+.login_main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height:350px;
+    text-align: center;
+}
+
+form{
+    margin-top:50px;
+    color:#8d6e63; 
+    font-family: 'Dongle', sans-serif;      
+    width:500px;
+    height:300px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 215);
+     
+}
+.user_input{
+    padding-bottom:10px;
+}
+.login_title{
+    font-size: 3.5em; 
+    font-weight: 800;   
+}
+
+.userpw label{
+    text-align: center;
+}
+.login_btn{
+    width:180px;
+    background-color:#8d6e63; 
+    color:white;
+    height:30px;    
+    border-radius: 4px;
+}
+.find_pw{
+    display: table;
+    margin:auto;
+    padding:auto;   
+}
+
+
+.find_ul{
+    list-style: none;
+    padding:0;
+}
+.find_ul li{
+    display: inline-block;
+    padding:0 10px;    
+    border-right:1px solid plum;;
+}
+.find_ul li:nth-child(3){
+    border:none;
+}
+.find_ul li:hover{    
+    font-size:130%;
+}
