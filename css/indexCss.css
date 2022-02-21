@@ -1,105 +1,140 @@
-body {
-    margin: 0 auto;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Do Hyeon', sans-serif;
+    line-height: 1.6;
 }
-a {
+
+nav{
+    font-family:'Do Hyeon', sans-serif;
+}
+nav a {
     text-decoration: none;
-    color: plum;
-
 }
-
-/* navCSS */
-
+.navbar a{
+    color: plum;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(245, 245, 215);
-    padding: 8px 12px;
+    background-color:rgb(245, 245, 215);
+    padding:8px 12px;
 }
-
-.navbar_logo {
-    font-size: 24px;
-    color: plum;
+.navbar_logo{
+    font-size:24px;
+    color:plum;
 }
-
-i {
-    color: plum;
+.navbar_log i {
+    color:plum;
 }
-
-.navbar_menu {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+.navbar_menu{
+    display:flex;
+    list-style:none;
+    padding-left:0;
 }
-
 .navbar_menu li:hover {
-    background-color: white;
+    background-color:white;
     border-radius: 4px;
 }
-
-.navbar_menu li {
+.navbar_menu li{
     padding: 8px 12px;
 }
-
-.navbar_icons {
-    list-style: none;
-    color: plum;
-    display: flex;
-    padding-left: 0;
+.navbar_icons{
+    list-style:none;
+    color:plum;
+    display:flex;
+    padding-left:0;
 }
-
-.navbar_icons li {
+.navbar_icons li{
     padding: 8px 12px;
 }
-
-.navbar_toogleBtn {
-    display: none;
-    position: absolute;
+.navbar_toogleBtn{
+    display:none;
+    position:absolute;
     right: 32px;
     font-size: 24px;
     color: plum;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px){
     .navbar {
-        flex-direction: column;
+        flex-direction:column;
         align-items: flex-start;
-        padding: 8px 24px;
+        padding:8px 24px;
     }
-
-    .navbar_menu {
+    .navbar_menu{
         display: none;
-        flex-direction: column;
+        flex-direction:column;
         align-items: center;
-        width: 100%;
+        width:100%;                 
     }
-
-    .navbar_menu li {
+    .navbar_menu li{
         width: 100%;
         text-align: center;
     }
-
     .navbar_icons {
         display: none;
         justify-content: center;
-        width: 100%;
+        width:100%;
         padding: 8px 12px;
     }
-
-    .navbar_toogleBtn {
-        display: block;
+    .navbar_toogleBtn{
+        display:block;
     }
-
     .navbar_menu.active,
     .navbar_icons.active {
-        display: flex;
-    }  
+        display : flex;
+    }
+}
+/* 메인 페이지 section 1 */
+.section1{
+    margin:0px auto;
+    height:600px;    
+    background: url('../img/dog22.jpg')fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+} 
+.sec1_logo{
+    font-size: 3em;
+    width:400px;
+    color:white;
+    font-family: 'Do Hyeon', 'sans-serif'; 
+    position:absolute;
+    top:80px;
+    left:300px;
+    animation: slide 1.5s ease-out;
+}
+.sec1_info {
+    font-size: 1.5em;
+    width:350px;
+    color:white;
+    font-family: 'Do Hyeon', 'sans-serif'; 
+    position:absolute;
+    top:500px;
+    left:300px;
+    animation: slide 1.5s ease-out;    
     
 }
+.sec1_info a {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;    
+    background-color: red;
+    text-decoration: none;
+}
 
-    .container1 a:visited { color:black; text-decoration: none;} 
-    .container1 a:link{ color:black; text-decoration: none;} 
+@keyframes slide{
+    from {
+        left:-200px;
+        opacity: 0;
+    }
+    to {
+        left :300px;
+        opacity: 1;
+    }
 
-  
+}
