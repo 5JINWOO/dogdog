@@ -1,0 +1,166 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+        nav{
+            font-family:'Do Hyeon', sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        .navbar a{
+            color: plum;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgb(245, 245, 215);
+            padding:8px 12px;
+        }
+        .navbar_logo{
+            font-size:24px;
+            color:plum;
+        }
+        .navbar_log i {
+            color:plum;
+        }
+        .navbar_menu{
+            display:flex;
+            list-style:none;
+            padding-left:0;
+        }
+        .navbar_menu li:hover {
+            background-color:white;
+            border-radius: 4px;
+        }
+        .navbar_menu li{
+            padding: 8px 12px;
+        }
+        .navbar_icons{
+            list-style:none;
+            color:plum;
+            display:flex;
+            padding-left:0;
+        }
+        .navbar_icons li{
+            padding: 8px 12px;
+        }
+        .navbar_toogleBtn{
+            display:none;
+            position:absolute;
+            right: 32px;
+            font-size: 24px;
+            color: plum;
+        }
+
+        @media screen and (max-width:768px){
+            .navbar {
+                flex-direction:column;
+                align-items: flex-start;
+                padding:8px 24px;
+            }
+            .navbar_menu{
+                display: none;
+                flex-direction:column;
+                align-items: center;
+                width:100%;                 
+            }
+            .navbar_menu li{
+                width: 100%;
+                text-align: center;
+            }
+            .navbar_icons {
+                display: none;
+                justify-content: center;
+                width:100%;
+                padding: 8px 12px;
+            }
+            .navbar_toogleBtn{
+                display:block;
+            }
+            .navbar_menu.active,
+            .navbar_icons.active {
+                display : flex;
+            }
+        }
+        
+
+        .container1 a:visited { color:black; text-decoration: none;} 
+        .container1 a:link{ color:black; text-decoration: none;} 
+        
+
+        .container1{
+            margin: 0px auto;
+            width: 1080px;
+            font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+            border-radius: 2px;
+            border: 1px solid #efefef;
+        }
+        .cont_boardlist{
+            margin: 30px;
+            
+        }
+        .cont_boardlist_header{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #a5a5a5;
+        }
+        .cont_boardlist_header>.h2{
+            font-size: 30px;
+        }
+        .cont_boardlist_header>.add_info a{
+            font-size: 15px;
+        }
+        .link_item{
+            float: left;
+            font-size: 15px;
+        }
+        .extend_info{
+            display: flex;
+            position: absolute;
+            right: 0;
+        }
+        .add_info{
+            position: relative;
+            height: 20px;
+            margin: 13px 0px;
+        }
+        .form-check{
+            margin-right: 20px;
+        }
+        #list_count2{
+            width: 50px;
+            height: 20px;
+        }
+        
+       
+        .paging{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin:30px 0px;
+        }
+        .list_paging >ul{
+            list-style: none;
+            display: flex;
+        }
+        .list_paging>ul li{
+            color: black;
+            padding: 10px;
+        }
+        .list_paging>ul li a{
+            padding: 10px;
+        }
+        .list_paging>ul li a:hover{
+            text-decoration: underline;
+        }
+        .paging button{
+            padding: 6px 14px;
+            border-radius: 2px;
+            border: 1px solid #e4e4e4;
+            background-color: white;
+            font-size: 13px;
+        }
+        
