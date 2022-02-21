@@ -10,8 +10,6 @@ const toggleBtn = document.querySelector('.navbar_toogleBtn');
         });
 
 // 로그인 페이지 section
-
-
     
     function loginCheck(){
         const id = document.querySelector('.user_id');
