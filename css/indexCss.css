@@ -88,35 +88,38 @@ nav a {
     }
 }
 /* 메인 페이지 section 1 */
+.container1{
+    margin:0;
+    padding:0;
+}
 .section1{
     margin:0px auto;
     height:600px;    
-    background: url('../img/dog22.jpg')fixed;
-    -webkit-background-size:cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;   
+    background: url('../img/dog22.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    
 } 
-.sec1_logo{
+.sec1_wrap{
+    position:absolute;
+    top:15%;
+    left:23%;
+    animation: slide 1.5s ease-out;   
+}
+.sec1_slogan{
     font-size: 3em;
     width:400px;
+    height:400px;
     color:white;
-    font-family: 'Do Hyeon', 'sans-serif'; 
-    position:absolute;
-    top:80px;
-    left:300px;
-    animation: slide 1.5s ease-out;
+    font-family: 'Do Hyeon', 'sans-serif';  
 }
 .sec1_info {
     font-size: 1.5em;
     width:350px;
     color:white;
-    font-family: 'Do Hyeon', 'sans-serif'; 
-    position:absolute;
-    top:500px;
-    left:300px;
-    animation: slide 1.5s ease-out;    
-    
+    font-family: 'Do Hyeon', 'sans-serif';     
 }
 .sec1_info a {
     border: 1px solid white;
@@ -133,8 +136,36 @@ nav a {
         opacity: 0;
     }
     to {
-        left :300px;
+        left :23%;
         opacity: 1;
     }
-
+}
+.section2{
+    font-family: '맑은고딕';
+    color:white;
+    margin:0 auto;
+    background-color:rgb(8, 179, 209);
+    display:flex;
+    align-items: center;    
+    justify-content: center;    
+    padding-top:20px;
+}
+.sec_logo{
+    font-size: 3em;
+    width: 150px;
+    text-align: center;    
+    color:white;   
+    padding-right:20px;
+}
+.sec2_title2{
+    padding:10px;
+    border-top:0.5px white;
+}
+.sec2_title a {
+    border:purple solid 2px;         
+    text-decoration:none;
+    padding:5px;
+    margin: 5px;
+    color :rgb(245, 245, 215);
+    border-radius: 3px;
 }
