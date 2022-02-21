@@ -24,6 +24,6 @@ const toggleBtn = document.querySelector('.navbar_toogleBtn');
             alert("비밀번호를 입력하세요");
         }
         else {
-            alert("로그인 성공!");            
+            location.href = "https://www.naver.com"             
         }
     }
