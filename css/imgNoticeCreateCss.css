@@ -201,6 +201,7 @@ nav ul li ul:hover{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    clear: right;
 }
 .bt_wrap button{
     margin: 20px 10px;
@@ -219,9 +220,9 @@ nav ul li ul:hover{
     font-size: 1.0rem;
 }
 
-
-
-
+a{
+    text-decoration: none;
+}
 .board_write{
     border-top : 2px solid #000;
 }
@@ -270,6 +271,9 @@ nav ul li ul:hover{
 .board_write .title dd{
     width: calc(100% - 100px);
 }
+.board_write .title input[type="text"]{
+    margin-left: 15px;
+}
 
 .board_write .title input[type="text"],
 .board_write .info input[type="text"],
@@ -304,3 +308,11 @@ nav ul li ul:hover{
     background-color: white;
     font-size: 13px;
 }
+.uploadbtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 40%;
+    float: right;
+}
+
