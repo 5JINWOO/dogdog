@@ -7,9 +7,11 @@ function loginCheck(){
     const link = document.write("<a href = 'index.html'" );
     if(id.value==""){
         alert("아이디를 입력하세요");
+        location.href = "login.html"
     }
     else if(pw.value==""){
         alert("비밀번호를 입력하세요");
+        location.href = "login.html"
     }
     else {
         confirm("로그인 하시겠습니까?");
