@@ -1,92 +1,193 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
+html { 
+    box-sizing: border-box; 
 }
 
-nav{
-    font-family:'Do Hyeon', sans-serif;
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    background: white;
+    font-family: 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    margin: 0;
 }
-a {
+a{
     text-decoration: none;
 }
-.navbar a{
-    color: plum;
+.navbar a { 
+    text-decoration: none;
 }
 .navbar {
+    width: 100%;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:rgb(245, 245, 215);
-    padding:8px 12px;
-}
-.navbar_logo{
-    font-size:24px;
-    color:plum;
-}
-.navbar_log i {
-    color:plum;
-}
-.navbar_menu{
-    display:flex;
-    list-style:none;
-    padding-left:0;
-}
-.navbar_menu li:hover {
-    background-color:white;
-    border-radius: 4px;
-}
-.navbar_menu li{
-    padding: 8px 12px;
-}
-.navbar_icons{
-    list-style:none;
-    color:plum;
-    display:flex;
-    padding-left:0;
-}
-.navbar_icons li{
-    padding: 8px 12px;
-}
-.navbar_toogleBtn{
-    display:none;
-    position:absolute;
-    right: 32px;
-    font-size: 24px;
-    color: plum;
+    background: #e8f5e9;
 }
 
-@media screen and (max-width:768px){
-    .navbar {
-        flex-direction:column;
-        align-items: flex-start;
-        padding:8px 24px;
-    }
-    .navbar_menu{
-        display: none;
-        flex-direction:column;
-        align-items: center;
-        width:100%;                 
-    }
-    .navbar_menu li{
-        width: 100%;
-        text-align: center;
-    }
-    .navbar_icons {
-        display: none;
-        justify-content: center;
-        width:100%;
-        padding: 8px 12px;
-    }
-    .navbar_toogleBtn{
-        display:block;
-    }
-    .navbar_menu.active,
-    .navbar_icons.active {
-        display : flex;
-    }
+/* Nav style */
+.navbar_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    margin: 0px;
+    padding: 20px;
+    color: #311b92;
+    font-size: 25px;
+    font-family: 'Do Hyeon', sans-serif;
 }
+.navbar_menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav_end {
+    list-style: none;
+    padding: 8px 12px;
+    display:flex;
+    width: 10%;
+    font-size: 24px;
+    color: #311b92;
+    align-items: center;
+    justify-content: center;
+}
+.nav_end i{
+    padding: 5px;
+}
+nav ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+    color: black;
+    display: block;
+    font-size: 14px;
+    padding: 15px 14px;
+    transition: 0.3s linear;
+}
+
+nav ul li:hover {
+    background: #e8f5e9;
+}
+
+nav ul li ul {
+    
+    display: none;
+    position: absolute;
+    width: 110px;
+}
+
+nav ul li ul li {
+    border-top: 1px solid #e8f5e9;
+    display: block;
+}
+
+nav ul li ul li:first-child { 
+    border-top: none; 
+}
+
+nav ul li ul li a {
+    background: #e8f5e9;
+    display: block;
+    padding: 10px 14px;
+}
+
+nav ul li ul li a:hover { 
+    background: #e8f5e9;
+}
+nav .fa.fa-angle-down { 
+    margin-left: 6px; 
+}
+
+.navbar_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    margin: 0px;
+    padding: 20px;
+    color: #311b92;
+    font-size: 25px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.navbar_menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav_end {
+    list-style: none;
+    padding: 8px 12px;
+    display:flex;
+    width: 10%;
+    font-size: 24px;
+    color: #311b92;
+    align-items: center;
+    justify-content: center;
+}
+.nav_end i{
+    padding: 5px;
+}
+nav ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+    color: black;
+    display: block;
+    font-size: 14px;
+    padding: 15px 14px;
+    transition: 0.3s linear;
+}
+
+nav ul li:hover {
+    background: #e8f5e9;
+}
+
+nav ul li ul li {
+    border-top: 1px solid #e8f5e9;
+    display: block;
+}
+
+nav ul li ul li { 
+    border-top: none;
+}
+
+nav ul li ul li a {
+    background: #e8f5e9;
+    display: block;
+    padding: 10px 14px;
+}
+
+nav ul li ul li a:hover { 
+    background: #e8f5e9;
+}
+nav .fa.fa-angle-down { 
+    margin-left: 6px; 
+}
+nav ul li ul:hover{
+    z-index: 1;
+}
+
+
+
 .paging{
     display: flex;
     justify-content: space-evenly;
@@ -96,6 +197,7 @@ a {
 
 .img_cont{
     margin: 20px auto;
+    padding-top: 40px;
     width: 1080px;
     border-radius: 2px;
     border: 1px solid #efefef;
@@ -114,7 +216,7 @@ a {
 
 .row>h1{
     font-family: 'Dongle', sans-serif;
-    color: plum;
+    color: #311b92;
 }
 .card img{
     width: 318px;
@@ -123,4 +225,12 @@ a {
 .col-md-4{
     display: flex;
     justify-content: center;
+}
+.card{
+    height: 407.78px;
+}
+.card-text{
+    font-family: Arial,"Malgun Gothic","맑은 고딕",system-ui,-apple-system,AppleSDGothicNeo-Regular,Helvetica,sans-serif;
+    width: 286px;
+    height: 76.781px;
 }

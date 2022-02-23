@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dogdog 이미지게시판</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6efa8ca364.js" 
@@ -13,32 +13,70 @@
     <link rel="stylesheet" href="css/imgNoticeCss.css">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Dongle:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/imgNoticeJs.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
 </head>
 <body>
     <nav class="navbar">
         <div class = "navbar_logo">
-        <i class="fa-solid fa-dog"></i>
-            <a href="#">DogDog</a>
+         <i class="fa-solid fa-dog" style="padding-right: 10px;"></i>
+            <a href="index.html" style="color: #311b92;">DOGDOG</a>
         </div>
-        <ul class = "navbar_menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">Photo</a></li>
-            <li><a href="#">Mypage</a></li>
-            <li><a href="#">JINWOO</a></li>
-            <li><a href="#">JJANG</a></li>
-            
-        </ul>
-        <ul class = "navbar_icons">
-        <li><i class="fa-brands fa-instagram-square"></i></li>
-        <li><i class="fa-brands fa-facebook-square"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>           
-        </ul>
-        
-        <a href="#" class="navbar_toogleBtn">
-            <i class="fa-solid fa-bars"></i>
-        </a>
+        <div class="navbar_menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">COMMUNITY</a></li>                         
+                <li><a href="#">CATEGORY<i class='fa fa-angle-down'></i></a>
+                  <ul>
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="List.html">자유게시판</a></li>
+                      <li><a href="imgNotice.html">IMG게시판</a></li>
+                  </ul>
+                </li>
+                <li class="sub_menu"><a href="#">SERVICE<i class='fa fa-angle-down'></i></a>
+                 <ul>
+                    <li><a href="#">애견샵</a></li>
+                    <li><a href="#">애견식당</a></li>
+                    <li><a href="#">동물병원</a></li>
+                 </ul>
+               </li>
+                <li class="sub_menu"><a href="#">DOG INFO<i class='fa fa-angle-down'></i></a>
+                  <ul>
+                     <li><a href="#">애견 정보</a></li>
+                     <li><a href="#">애견 NEWS</a></li>
+                     <li><a href="#">애견 상품</a></li>
+                  </ul>
+                </li>
+                <li class="sub_menu"><a href="#">MYPAGE<i class='fa fa-angle-down'></i></a>
+                 <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="signUp.html">SIGN UP</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">1:1 문의</a></li>
+                 </ul>
+               </li>
+             </ul>
+        </div>
+        <div class="nav_end">
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter"></i>            
+        </div>
     </nav>
-
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $('nav li').hover(
+            function() {
+        $('ul', this).stop().slideDown(200);
+            },
+            function() {
+        $('ul', this).stop().slideUp(200);
+            }
+        );
+    </script>   
 
     <div class="img_cont">
         <div class="container">
@@ -50,9 +88,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">99Dan</a>
+                            <h5 class="card-title">지금 자는 정규 바보 똥개</h5>
+                            <p class="card-text">이 글을 보신 여러분은 행운아입니다 ㅎㅎ</p>
+                            <a href="99dan.html" class="btn btn-primary">구구단 호출</a>
                         </div>
                     </div>
                 </div>
@@ -60,9 +98,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">수수 한장</h5>
+                            <p class="card-text">ㅎㅎ 우리 수수 귀엽죠 ㅋㅋ?</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
@@ -70,9 +108,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">하리에요</h5>
+                            <p class="card-text">주인특 : 위에 이쁜 사진들보다 이런 엽짤이 더 좋음</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
@@ -82,9 +120,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">안 귀여웠으면 멸종</h5>
+                            <p class="card-text">귀엽긴 해...</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
@@ -92,9 +130,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/5.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">검은 맹수</h5>
+                            <p class="card-text">용맹해보이시나요?</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
@@ -102,9 +140,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">눈보고 좋아하는 우리똥강아지</h5>
+                            <p class="card-text">눈오는데 굳이 나가고싶어하는 하리 데리고나왔습니다 ㅋㅋ</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
@@ -114,9 +152,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/7.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">내 동생 사탕이</h5>
+                            <p class="card-text">사진찍는데 갸우뚱하는중 ㅋㅋ</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
@@ -124,9 +162,9 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/8.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">동생이 생겼어요</h5>
+                            <p class="card-text">댕댕이 불쌍한 표정 ㅋㅋㅋㅋ</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
@@ -134,16 +172,16 @@
                     <div class="card" style="width: 20rem;">
                         <img class="img-fluid" src="img/9.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">엄청 잘생겼죠?</h5>
+                            <p class="card-text">생긴건 이렇지만 사람엄청좋아함 ㅋㅋ</p>
+                            <a href="#" class="btn btn-primary">게시글 보기</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="paging">
                 <div>
-                    <button type="button"><a href="noticeCreate.html">글쓰기</a></button>
+                    <button type="button"><a href="imgNoticeCreate.html">글쓰기</a></button>
                 </div>
                 <nav aria-label="...">
                     <ul class="pagination pagination-sm">
@@ -163,20 +201,11 @@
                     </ul>
                 </nav>
                 <div>
-                    <button type="button"><a href="#">메인화면 돌아가기</a></button>
+                    <button type="button"><a href="index.html">메인화면으로 돌아가기</a></button>
                 </div>
             </div>
         </div>
     </div>
-    <script> 
-        const toggleBtn = document.querySelector('.navbar_toogleBtn');
-        const menu = document.querySelector('.navbar_menu');
-        const icons = document.querySelector('.navbar_icons');
-        
-        toggleBtn.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            icons.classList.toggle('active'); 
-        });
-    </script>
+    
 </body>
 </html>

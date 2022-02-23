@@ -183,107 +183,90 @@ nav ul li ul:hover{
     z-index: 1;
 }
 
- /* 로그인 페이지 section */
-.section{
-    margin:0 auto;    
-    height: 1000px;
-    position: relative; 
+.h2 a:visited { color:#311b92; text-decoration: none;} 
+.h2 a:link { color:#311b92; text-decoration: none;} 
+
+
+.container1{
+    margin: 0px auto;
+    width: 1080px;
+    font-family: 'Malgun Gothic', sans-serif;
+    border-radius: 2px;
+    border: 1px solid #efefef;
 }
- 
-.section:after {
-     content : "";
-     display: block;
-     position: absolute;
-     top: 0;
-     left: 0;
-     background-image: url('../img/dog3.jpg');
-     width: 100%;
-     height: 100%;
-     opacity : 0.7;
-     z-index: -1;
- }
- 
-.section_logo{   
-    opacity : 1;  
+.cont_boardlist{
+    margin: 30px;
+    
+}
+.cont_boardlist_header{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a5a5a5;
+}
+.cont_boardlist_header>.h2{
+    font-size: 30px;
+}
+.cont_boardlist_header>.add_info a{
+    font-size: 15px;
+}
+.link_item{
+    float: left;
+    font-size: 15px;
+}
+.extend_info{
     display: flex;
-    align-items: flex-end;
-    justify-content: center;    
-    height:200px;    
-    font-size: 5em;   
+    position: absolute;
+    right: 0;
 }
-.section_logo a, .section_logo i{
-    padding:5px 5px;
-    color:white;
+.add_info{
+    position: relative;
+    height: 20px;
+    margin: 13px 0px;
 }
-.login_main{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-    height:350px;
-    text-align: center;
+.form-check{
+    margin-right: 20px;
 }
-
-form{
-    margin-top:50px;
-    background-color: white;
-    color:#311b92;; 
-    font-family: 'Dongle', sans-serif;      
-    width:500px;
-    border-radius: 5px;   
-    border: 10px solid rgba(27, 78, 187, 0.5);     
+#list_count2{
+    width: 50px;
+    height: 20px;
 }
-.user_input{
-    padding-bottom:10px;
+.paging{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin:30px 0px;
 }
-.login_title{
-    font-size: 5em;  
-}
-.userpw label{
-    text-align: center;
-}
-.login_btn{
-    width:185px;
-    background-color:rgb(20, 218, 201, 0.5);; 
-    color:white;
-    height:30px;    
-    border-radius: 4px;
-    border-color: white;
-    font-family: '맑은 고딕';
-    font-size: large;
-    margin-bottom: 30px;
-}
-.find_pw{
-    display: table;
-    margin:auto;
-    padding:auto;   
-}
-
-.find_ul{
+.list_paging >ul{
     list-style: none;
-    padding:0;
-    font-family: 'Do hyeon' ,'맑은 고딕';
+    display: flex;
 }
-.find_ul li{
-    display: inline-block;
-    padding:0 10px;    
-    border-right:1px solid white;
+.list_paging>ul li{
+    color: black;
+    padding: 10px;
 }
-
-.find_ul li a{
-    color:white;
+.list_paging>ul li a{
+    padding: 10px;
 }
-.find_ul li:nth-child(3){
-    border:none;
+.list_paging>ul li a:hover{
+    text-decoration: underline;
 }
-.find_ul li a:hover{ 
-    color: rgb(20, 218, 201);
+.paging button{
+    padding: 6px 14px;
+    border-radius: 2px;
+    border: 1px solid #e4e4e4;
+    background-color: white;
+    font-size: 13px;
 }
-.section a {
+.paging #pagingA{
     text-decoration: none;
 }
+.last{
+    margin:0;
+    padding:0;
+    width:100%;
+}
 footer {
-    height: 50px; 
+    height: 100px; 
     padding: 10px;
     background:black;
     text-align: center;

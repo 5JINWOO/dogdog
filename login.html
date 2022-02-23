@@ -8,38 +8,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/loginCss.css" type="text/css">
-    <title>dogdog</title>
+    <title>dogdog 로그인</title>
 </head>
 
 <body>
-    <div class="container"> <!--안씀-->
     <nav class="navbar">
-        <div class="navbar_logo">
-            <i class="fa-solid fa-dog"></i>
-            <a href="#">DogDog</a>
+        <div class = "navbar_logo">
+            <i class="fa-solid fa-dog" style="padding-right: 10px;"></i>
+            <a href="index.html" style="color: #311b92;">DOGDOG</a>
         </div>
-        <ul class="navbar_menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">Photo</a></li>
-            <li><a href="#">Mypage</a></li>
-            <li><a href="#">JINWOO</a></li>
-            <li><a href="imgNotice.html">이미지게시판</a></li>
-
-        </ul>
-        <ul class="navbar_icons">
-            <li><i class="fa-brands fa-instagram-square"></i></li>
-            <li><i class="fa-brands fa-facebook-square"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-        </ul>
-
-        <a href="#" class="navbar_toogleBtn">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-    </nav>  
-        <section class = "section">
+        <div class="navbar_menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">COMMUNITY</a></li>                         
+                <li><a href="#">CATEGORY<i class='fa fa-angle-down'></i></a>
+                  <ul>
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="List.html">자유게시판</a></li>
+                      <li><a href="imgNotice.html">IMG게시판</a></li>
+                  </ul>
+                </li>
+                <li class="sub_menu"><a href="#">SERVICE<i class='fa fa-angle-down'></i></a>
+                 <ul>
+                    <li><a href="#">애견샵</a></li>
+                    <li><a href="#">애견식당</a></li>
+                    <li><a href="#">동물병원</a></li>
+                 </ul>
+               </li>
+                <li class="sub_menu"><a href="#">DOG INFO<i class='fa fa-angle-down'></i></a>
+                  <ul>
+                     <li><a href="#">애견 정보</a></li>
+                     <li><a href="#">애견 NEWS</a></li>
+                     <li><a href="#">애견 상품</a></li>
+                  </ul>
+                </li>
+                <li class="sub_menu"><a href="#">MYPAGE<i class='fa fa-angle-down'></i></a>
+                 <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="signUp.html">SIGN UP</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">1:1 문의</a></li>
+                 </ul>
+               </li>
+             </ul>
+        </div>
+        <div class="nav_end">
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter"></i>            
+        </div>
+    </nav>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('nav li').hover(
+              function() {
+          $('ul', this).stop().slideDown(200);
+              },
+              function() {
+          $('ul', this).stop().slideUp(200);
+              }
+          );
+        });
+    </script>   
+    
+    <section class = "section">
             <div class="section_logo">
                 <i class="fa-solid fa-dog"></i>
-                <a href="#">DogDog
+                <a href="index.html">DogDog
                 </a>           
             </div>            
             <div class="login_main">                  
@@ -68,9 +106,12 @@
         </div> 
         </section>
     </div>      
+    <footer>
+        <p><small>Copyright DOGDOG Corp. All Rights Reserved.</small></p>
+    </footer>
     <script src="https://kit.fontawesome.com/6efa8ca364.js" crossorigin="anonymous">
     </script>
-    <script src = 'myscript.js' type="text/javascript" defer></script>
+    <script src = 'js/dogdog.js' type="text/javascript" defer></script>
    
     
 </body>

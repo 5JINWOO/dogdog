@@ -1,247 +1,174 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">   
-        <title>register</title>
-  <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body{
-            margin:0;
-            font-family:'Do Hyeon', sans-serif;
-        }
-        a{
-            text-decoration: none;
-            color: #8d6e63;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color:rgb(245, 245, 215);
-            padding:8px 12px;
-        }
-         .navbar_logo{
-             font-size:24px;
-             color:#8d6e63;
-        }
-         .navbar_log i {
-             color:#8d6e63;
-        }
-         .navbar_menu{
-             display:flex;
-             list-style:none;
-             padding-left:0;
-        }
-         .navbar_menu li:hover {
-             background-color:white;
-             border-radius: 4px;
-        }
-         .navbar_menu li{
-             padding: 8px 12px;
-        }
-         .navbar_icons{
-             list-style:none;
-             color:#8d6e63;
-             display:flex;
-             padding-left:0;
-        }
-         .navbar_icons li{
-             padding: 8px 12px;
-        }
-         .navbar_toogleBtn{
-             display:none;
-             position:absolute;
-             right: 32px;
-             font-size: 24px;
-             color: #8d6e63;
-        }
 
-         @media screen and (max-width:768px){
-             .navbar {
-                 flex-direction:column;
-                 align-items: flex-start;
-                 padding:8px 24px;
-             }
-             .navbar_menu{
-                 display: none;
-                 flex-direction:column;
-                 align-items: center;
-                 width:100%;                 
-             }
-             .navbar_menu li{
-                 width: 100%;
-                 text-align: center;
-             }
-             .navbar_icons {
-                 display: none;
-                 justify-content: center;
-                 width:100%;
-                 padding: 8px 12px;
-             }
-             .navbar_toogleBtn{
-                 display:block;
-             }
-             .navbar_menu.active,
-             .navbar_icons.active {
-                 display : flex;
-             }
-         }
-         @font-face {
-    font-family: 'LeferiPoint-WhiteObliqueA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-        
-         main {
-             margin: 0px;
-             padding-top: 10px;
-             background:rgb(245, 245, 215);
-         }
-         #regi_name { 
-             padding-top: 30px;
-         }
-         .container {
-             width: 100%;
-             margin: 10px;
-             padding-left: 50px;
-             padding-right: 50px;
-             font-family: 'LeferiPoint-WhiteObliqueA';
-             font-size: 13px;
-             display: flex;
-             flex-flow: column nowrap;
-             align-items: center;
-         }
-         h2 {
-             margin: 0px;
-             padding: 20px;   
-         }
-         #basic_info {
-             margin: 5px;
-             padding: 10px;
-             width: 400px;
-             }
-        #condition {
-            width: 400px;
-        }
-         input[name=basic] {
-             margin-top: 5px;
-             padding: 7px;
-             width: 380px;
-             border: 0.1px solid black;
-             display: flex;
-         }
-         #tandc {
-             margin: 10px;
-             padding: 10px;
-             border: 0.2px solid black;
-             border-radius: 5px;
-             background: white;  
-         }
-         #check {
-             margin: 5px;
-             padding: 5px;    
-         }
-         #signup {
-             margin: 30px;
-             padding: 10px 150px;
-             font-family: 'LeferiPoint-WhiteObliqueA';
-             font-size: 15px;
-             border: 0.2px none ;
-             border-radius: 10px;
-             background-color: white;
-             display: flex;
-             justify-content: center;
-         }
-         hr {
-             border: 0.1px solid black;
-         }
-         footer { 
-             padding: 15ex;
-             background:rgb(245, 245, 215);
-         }
-  </style>
-  <script src="https://kit.fontawesome.com/6efa8ca364.js" 
-        crossorigin="anonymous">
-  </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="Css/signUp.css" type="text/css">  
+        <script src="https://kit.fontawesome.com/6efa8ca364.js" crossorigin="anonymous"></script>
+        <title>dogdog 회원가입</title>
+    
     </head>
+
     <body>
-        <header>
-            <nav class="navbar">
-                <div class = "navbar_logo">
-                 <i class="fa-solid fa-dog"></i>
-                    <a href="#">DogDog</a>
-                </div>
-                <ul class = "navbar_menu">
-                   <li><a href="#">HOME</a></li>
-                   <li><a href="#">PHOTO</a></li>
-                   <li><a href="#">MYPAGE</a></li>
-                   <li><a href="#">JINWOO</a></li>
-                   <li><a href="#">JJANG</a></li>
-                    
-                </ul>
-                <ul class = "navbar_icons">
-                <li><i class="fa-brands fa-instagram-square"></i></li>
-                <li><i class="fa-brands fa-facebook-square"></i></li>
-                <li><i class="fa-brands fa-twitter"></i></li>           
-                </ul>
-                
-                <a href="#" class="navbar_toogleBtn">
-                    <i class="fa-solid fa-bars"></i>
-                </a> 
-             </nav>
-             <script> 
-                 const toggleBtn = document.querySelector('.navbar_toogleBtn');
-                 const menu = document.querySelector('.navbar_menu');
-                 const icons = document.querySelector('.navbar_icons');
-                  
-                 toggleBtn.addEventListener('click', () => {
-                     menu.classList.toggle('active');
-                     icons.classList.toggle('active'); 
-                 });
-             </script>
-        </header>
+        <nav class="navbar">
+            <div class = "navbar_logo">
+             <i class="fa-solid fa-dog" style="padding-right: 10px;"></i>
+                <a href="index.html" style="color: #311b92;">DOGDOG</a>
+            </div>
+            <div class="navbar_menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SEARCH</a></li>
+                    <li><a href="#">COMMUNITY</a></li>                         
+                    <li><a href="#">CATEGORY<i class='fa fa-angle-down'></i></a>
+                      <ul>
+                          <li><a href="#">공지사항</a></li>
+                          <li><a href="List.html">자유게시판</a></li>
+                          <li><a href="imgNotice.html">IMG게시판</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub_menu"><a href="#">SERVICE<i class='fa fa-angle-down'></i></a>
+                     <ul>
+                        <li><a href="#">애견샵</a></li>
+                        <li><a href="#">애견식당</a></li>
+                        <li><a href="#">동물병원</a></li>
+                     </ul>
+                   </li>
+                    <li class="sub_menu"><a href="#">DOG INFO<i class='fa fa-angle-down'></i></a>
+                      <ul>
+                         <li><a href="#">애견 정보</a></li>
+                         <li><a href="#">애견 NEWS</a></li>
+                         <li><a href="#">애견 상품</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub_menu"><a href="#">MYPAGE<i class='fa fa-angle-down'></i></a>
+                     <ul>
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="signUp.html">SIGN UP</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">1:1 문의</a></li>
+                     </ul>
+                   </li>
+                 </ul>
+            </div>
+            <div class="nav_end">
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-twitter"></i>            
+            </div>
+        </nav>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $('nav li').hover(
+                function() {
+            $('ul', this).stop().slideDown(200);
+                },
+                function() {
+            $('ul', this).stop().slideUp(200);
+                }
+            );
+        </script>   
+
         <main>
-          <form class="container">
+            <form class="join_form" action="join_ok.php" method="post">
             <div id="regi_name">
-                <h2>REGISTER</h2>
+                <h1>REGISTER</h1>
             </div>
-            <div id="basic_info">
-                <h3>회원구분  <input type="checkbox"> 개인회원</h3>
+            <div class="basic_info">
+                <h2><span style="color: rgb(231, 101, 101);">*</span>필수정보</h2>
                 <hr><br>
-                <p>이름 <input type="text" name="basic"></p><br>
-                <p>아이디 <input type="text" name="basic"></p><br>
-                <p>비밀번호 <input type="password" name="basic"></p><br>
-                <p>비밀번호 확인 <input type="password" name="basic"></p><br>
-                <p>이메일 <input type="email" name="basic"></p><br>
-                <p>일반전화 <input type="number" name="basic"></p><br>
-                <p>휴대전화 <input type="number" name="basic"></p>
-                <br><br><br>    
+                <h3>이름</h3> <input type="text" name="basic" id="uname" placeholder="이름"><br>
+                <h3>아이디</h3> <input type="text" name="basic" id="uid" placeholder="아이디"><br>
+                <h3>비밀번호</h3> <input type="password" name="basic" id="pwd" placeholder="비밀번호"><br>
+                <h3>비밀번호 확인</h3> <input type="password" name="basic" id="repwd" placeholder="비밀번호 확인"><br>
+                <h3>이메일</h3> <input type="email" name="basic" id="email_id" placeholder="이메일"><br>
+                <h3>휴대전화</h3> <input type="number" name="basic" id="mobile" placeholder="휴대전화">
             </div>
-            <div class="condition">
-            이용약관 동의<br><br>
+            <script src = 'js/dogdog.js' type="text/javascript" defer></script>
+            <div class="extra_info">
+                <br><h2>추가 정보<small>(선택사항)</small></h2>
+                <hr><br>
+                    <div>
+                    <h3>생년월일</h3>
+                        <div id="birth_wrap">
+                            <div id="birth_yy">
+                                <span class="box">
+                                <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자리 입력)">
+                                </span>
+                            </div>
+                            <div id="birth_mm">
+                                <span class="box">
+                                <select id="mm" style="font-weight: lighter;">
+                                    <option>월</option>
+                                    <option value="01">1월</option>
+                                    <option value="02">2월</option>
+                                    <option value="03">3월</option>
+                                    <option value="04">4월</option>
+                                    <option value="05">5월</option>
+                                    <option value="06">6월</option>
+                                    <option value="06">6월</option>
+                                    <option value="07">7월</option>                              
+                                    <option value="08">8월</option>                              
+                                    <option value="09">9월</option>                              
+                                    <option value="10">10월</option>
+                                    <option value="11">11월</option>
+                                    <option value="12">12월</option>
+                                </select>
+                                </span>
+                            </div>
+                            <div id="birth_dd">
+                                <span class="box">
+                                <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                                </span>
+                            </div>
+                        </div>   
+                    </div>
+                <br><h3>성별</h3>
+                <div id="gender" style="font-weight: lighter;">
+                <input type="radio" name="gender"> 여 <input type="radio" name="gender"> 남
+                </div>
+                <br><h3>취미</h3>
+                <div id="hobbys" style="font-weight: lighter;">
+                    <input type="checkbox" name="hobby"> 음악
+                    <input type="checkbox" name="hobby"> 영화
+                    <input type="checkbox" name="hobby"> 코딩
+                    <input type="checkbox" name="hobby"> 운동
+                    <input type="checkbox" name="hobby"> 쇼핑
+                    <input type="checkbox" name="hobby"> 책읽기
+                </div>
+                <br><h3>직업</h3> 
+                <div id="jobs">
+                <select id="job" style="font-weight: lighter;">
+                        <option value="1">직업 선택</option>
+                        <option value="2">축구선수</option>
+                        <option value="3">간호사</option>
+                        <option value="4">교수</option>
+                        <option value="5">프로게이머</option>
+                        <option value="6">개발자</option>
+                        </select>
+                </div>
+                <div id="self_intro">
+                <br><h3>자기소개</h3>
+                <textarea cols="40" rows="10" placeholder="간단한 자기소개를 입력해 주세요."></textarea>
+                </div>
+            </div>
+            <div id="receiveAgree">
             <label id="agree">
-                <input type="checkbox" id="check">(필수) 본인은 만 14세 미만이 아닙니다.<br>
-                <input type="checkbox" id="check">(필수) <span>이용약관</span>에 동의합니다.<br>
-                <input type="checkbox" id="check">(필수) <span>개인정보처리방침</span>에 동의합니다.<br>
-                <input type="checkbox" id="check">(선택) DOGDOG에서 제공하는 소식을 SMS, 이메일로 받겠습니다.
-            </label><br>
+                <br><input type="checkbox" id="check"> (선택) DOGDOG에서 제공하는 소식을 SMS, 이메일로 받겠습니다.
+            </label><br><br>
             </div>
-            <div class="button">
-            <input type="submit" onclick="alert('회원가입이 완료되었습니다.');" id="signup" value="회원가입">
+            <div id="regi_button">
+            <button type="button" id="button" onClick="joinform_check();">가입하기</button>
+            <button type="button" id="button">다시 작성</button>
             </div>
-          </form>
-          <hr>
+          </form>          
         </main>
         <footer>
-    
+            <p><small>Copyright DOGDOG Corp. All Rights Reserved.</small></p>
         </footer>
     </body>
 </html>
