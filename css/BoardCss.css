@@ -197,6 +197,10 @@ nav ul li ul:hover{
         box-sizing: border-box;
     }
 
+    .board_list .row{
+        margin: 10px auto;
+    }
+
     .board_list .num,
     .board_list .writer,
     .board_list .count{
@@ -301,7 +305,9 @@ a{
 }
 
 .board_title strong{
-    font-size: 3rem;
+    font-family: 'Dongle', sans-serif;
+    color: #311b92;
+    font-size: 6rem;
 }
 
 .board_title p{
