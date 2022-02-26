@@ -23,7 +23,7 @@
 * BOOT STRAP
 
 <figure>
-<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtsFCh%2Fbtrurw3rTHv%2Fnk94KR6ZAJvEBTXEe17cT1%2Fimg.png" 
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbyQ9Id%2FbtruqE2gjr1%2FsgxN4pKAMktRXSzgszCj1k%2Fimg.png" 
      width ="500px" height="300px">   
 </figure>
 
