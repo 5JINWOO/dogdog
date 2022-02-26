@@ -1,10 +1,8 @@
 # dogdog
 
-|국비project|웹사이트 화면구현
+|**국비project**|**웹사이트 화면구현**|
 |:--:|:--:|
 |DOGDOG |애견관리사이트|
-
-
 
 ## PAGE
 * 메인 
@@ -24,7 +22,8 @@
 
 <figure>
 <img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbyQ9Id%2FbtruqE2gjr1%2FsgxN4pKAMktRXSzgszCj1k%2Fimg.png" 
-     width ="500px" height="300px">   
+     width ="500px" height="300px">
+     <figurecaption>
 </figure>
 
 
